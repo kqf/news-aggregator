@@ -7,7 +7,8 @@ all: model/*.py data/*.csv
 	
 
 %.csv:
-	curl $(data_url)/$(data_file) -O data/$(data_file)
-	unzip data/$(data_file) -p data/
+	mkdir -p data/
+	curl $(data_url)/$(data_file) -o data/$(data_file)
+	unzip data/$(data_file) -d data/
 
 .PHONY: all
