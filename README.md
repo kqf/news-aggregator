@@ -5,6 +5,8 @@ Exploring the [news aggregator data set](http://archive.ics.uci.edu/ml/datasets/
 ## Run the solution
 To run the solution do
 ```bash
+# Install the package
+pip install .
 
 # It will train and validate the solution
 make 

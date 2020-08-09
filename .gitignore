@@ -7,3 +7,5 @@
 *.hd5
 .DS_Store
 .python-version
+*.egg*
+deleteme.*

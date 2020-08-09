@@ -4,4 +4,9 @@ setup(
     name="newsaggregator",
     version="0.0.1",
     packages=find_packages(),
+    entry_points={
+        'console_scripts': [
+            'news-classifier=model.main:main',
+        ],
+    },
 )

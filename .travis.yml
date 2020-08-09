@@ -4,13 +4,9 @@ language:
 python:
   - "3.6"
 
-before_install:
-  - sudo apt-get install unar
-
 install:
   - pip install -r requirements.txt
   - make *.csv
 
 script:
   - pytest
-  
